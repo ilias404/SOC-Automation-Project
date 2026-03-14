@@ -206,8 +206,12 @@ Now let’s go back to the Wazuh dashboard and create a new index pattern to rea
 ![index1](/screenshots/index1.png)
 ![index2](/screenshots/index2.png)
 
+# Real Telemetry
+
 Now that Wazuh can read all the events, let's make some noise by running [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919) on our Windows 10 virtual machine.
 > Mimikatz is a widely used, open-source security tool created by Benjamin Delpy that extracts plain-text passwords, hashes, PINs, and Kerberos tickets from Microsoft Windows memory. It is primarily used to analyze Windows security, but also to perform attacks like pass-the-hash or privilege escalation.
+
+
 
 
 
