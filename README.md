@@ -141,3 +141,6 @@ If all services are up and active, we can access our server by entering its IP a
 
 ![thehivelogin](/screenshots/thehivelogin.png)
 
+# Windows 10 Wazuh Agent
+
+To get logs from our Windows 10 machine, we must first set up a Wazuh agent on it. 
