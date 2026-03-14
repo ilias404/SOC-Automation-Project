@@ -144,3 +144,8 @@ If all services are up and active, we can access our server by entering its IP a
 # Windows 10 Wazuh Agent
 
 To get logs from our Windows 10 machine, we must first set up a Wazuh agent on it. 
+
+![wazuhagent](/screenshots/wazuhagent1.png)
+![wazuhagent](/screenshots/wazuhagent2.png)
+![wazuhagent](/screenshots/wazuhagent3.png)
+
