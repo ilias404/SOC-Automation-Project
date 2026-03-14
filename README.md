@@ -310,8 +310,11 @@ TheHive will be configured following the same approach. The screenshots provided
 
 # Email
 
-shuffleemail.png
+Lastly, regarding the email app:
+
 ![shuffleemail](/screenshots/shuffleemail.png)
+
+# Testing The Workflow
 
 
 
