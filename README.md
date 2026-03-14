@@ -223,10 +223,10 @@ This should generate some logs in the Wazuh dashboard. Let's go back and check.
 Bingo!
 
 # Creating Custom Rules
-In Wazuh, a rule is a condition used to detect suspicious or important events in logs and generate an alert.
-To create an alert that prompts a SOC analyst to take action, we will create a custom rule that detects the start of our Mimikatz process.
-Let's head to Server Management > Rules > Manage Rules > Custom Rules > ```local_rules.xml```
-Now, by using ChatGPT or copying a rule from ```0800-sysmon_id_1.xml, you can obtain a Wazuh Rule for Sysmon Event ID 1 to customize your own rule. In this lab, we'll be using the following from 0800-sysmon_id_1.xml:
+In Wazuh, a rule is a condition that is used to detect important or suspicious events in log files and generate an alert.
+To create an alert that prompts a Security Operations Centre (SOC) analyst to take action, we will create a custom rule that detects the start of our Mimikatz process.
+Head to Server Management > Rules > Manage Rules > Custom Rules > ```local_rules.xml```.
+You can now obtain a Wazuh Rule for Sysmon Event ID 1 by using ChatGPT or copying a rule from ```0800-sysmon_id_1.xml``` to customise your own rule. In this lab, we will use the following rule from ```0800-sysmon_id_1.xml```:
 ```
 <rule id="92000" level="4">
     <if_group>sysmon_event1</if_group>
@@ -238,8 +238,8 @@ Now, by using ChatGPT or copying a rule from ```0800-sysmon_id_1.xml, you can ob
     </mitre>
   </rule>
 ```
-Now lets tailor it to our preferences and we should get something like this: 
-
+Let's tailor it to our preferences — we should end up with something like this: 
+![localrule](/screenshots/localrule.png)
 
 
 
