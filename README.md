@@ -197,6 +197,11 @@ nano /etc/filebeat/filebeat.yml
 ```
 ![filebeat](/screenshots/filebeat.png)
 
+Then restart the service:
+```
+systemctl restart filebeat
+```
+Now let’s go back to the Wazuh dashboard and create a new index pattern to read the wazuh-archives-* logs.
 
 
 
