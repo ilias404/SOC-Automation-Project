@@ -1,7 +1,7 @@
 # Wazuh-Lab
 
 # Introduction
-The aim of this lab is to familiarise ourselves with Wazuh, The Hive and Shuffler in order to automate Security Operations Centre (SOC) tasks.
+The aim of this lab is to familiarize ourselves with Wazuh, The Hive and Shuffle in order to automate Security Operations Centre (SOC) tasks.
 First, we will create a diagram to help visualise the data flow between our machines and components in the lab environment.
 
 ![diagram](/screenshots/diagram.png)
@@ -64,7 +64,7 @@ To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://rele
 
 # TheHive's Configuration
 
-As the Hive's configuration is mentioned in the documentation, we won't go into much detail about it here. 
+As the Hive's configuration is mentioned in the documentation so we won't go into much detail about it here. 
 However, we are going to change some variables that were not mentioned in the documentation at the time of writing.
 
 >  ⚠️ Note: Only run the following commands after installing Cassandra, Java and Elasticsearch from the documentation; otherwise, you won't be able to find the configuration files.
@@ -164,7 +164,7 @@ NET START Wazuh
 
 To feed Sysmon logs to the Wazuh server on our Windows machine, we need to make some changes to the Wazuh agent configuration file ```ossec.conf```, which is located in ```C:\Program Files (x86)\ossec-agent```
 
-Scroll down through the file and under ```<!-- Log analysis -->```, lets add this :
+Scroll down through the file and under ```<!-- Log analysis -->```, let's add this :
 
 ```
 <localfile>
@@ -203,7 +203,7 @@ Then restart the service:
 ```
 systemctl restart filebeat
 ```
-Now let’s go back to the Wazuh dashboard and create a new index pattern to read the wazuh-archives-* logs.
+Now let’s go to the Wazuh dashboard and create an index pattern for wazuh-archives-* to query the archived logs.
 
 ![index1](/screenshots/index1.png)
 ![index2](/screenshots/index2.png)
@@ -322,7 +322,7 @@ Lastly, regarding the email app:
 
 ![webhookresult](/screenshots/webhookresult.png)
 
-2. The SHA256 regex is used to parse the log and extract the SHA256 hash.
+2. Regex is used to extract (parse) the SHA256 hash from the log.
 
 ![sha256extractorresult](/screenshots/sha256extractorresult.png)
 
