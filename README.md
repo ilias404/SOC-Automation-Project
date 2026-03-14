@@ -1,7 +1,7 @@
 # Wazuh-Lab
 
 # Introduction
-The aim of this lab is to familiarize ourselves with Wazuh, The Hive and Shuffle in order to automate Security Operations Centre (SOC) tasks.
+The aim of this lab is to familiarize ourselves with Wazuh, TheHive and Shuffle in order to automate Security Operations Centre (SOC) tasks.
 First, we will create a diagram to help visualise the data flow between our machines and components in the lab environment.
 
 ![diagram](/screenshots/diagram.png)
@@ -64,7 +64,7 @@ To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://rele
 
 # TheHive's Configuration
 
-As the Hive's configuration is mentioned in the documentation so we won't go into much detail about it here. 
+Since TheHive’s configuration is covered in the documentation, we won’t go into detail here. 
 However, we are going to change some variables that were not mentioned in the documentation at the time of writing.
 
 >  ⚠️ Note: Only run the following commands after installing Cassandra, Java and Elasticsearch from the documentation; otherwise, you won't be able to find the configuration files.
@@ -222,7 +222,7 @@ This should generate some logs in the Wazuh dashboard. Let's go back and check.
 
 ![mimikatzlog](/screenshots/mimikatzlog.png)
 
-Bingo!
+Bingo.
 
 # Creating Custom Rules
 In Wazuh, a rule is a condition that is used to detect important or suspicious events in log files and generate an alert.
@@ -246,7 +246,7 @@ Let's tailor it to our preferences — we should end up with something like this
 
 # Shuffle automation
 Now let's use Shuffle  to automate some tasks that will make our lives easier.
-> Shuffle (often called Shuffle automation) is an open-source SOAR tool used in cybersecurity to automate security workflows. It connects different security tools and automates actions when an alert occurs.
+> Shuffle is an open-source SOAR tool used in cybersecurity to automate security workflows. It connects different security tools and automates actions when an alert occurs.
 
 ## The Shuffle Workflow
 
@@ -258,7 +258,7 @@ Now let's use Shuffle  to automate some tasks that will make our lives easier.
 3. The extracted SHA256 hash is checked against VirusTotal to determine whether the file is known to be malicious.
 4. An alert is then created in TheHive, and an email notification is sent to the SOC analyst.
 
-Let's start! 
+Let's begin with the configurations.
 
 # Integrate Wazuh with Shuffle (The Webhook)
 
