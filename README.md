@@ -178,3 +178,6 @@ net stop wazuh
 net start wazuh
 ```
 Our Sysmon logs can now appear in our Wazuh's dashboard.
+
+# Telemetry
+If we were to create telemetry using the current configurations, Wazuh might not show us the telemetry because, by default, Wazuh does not log all events. Luckily, we can change this by going to ```/var/ossec/etc/ossec.conf``` and making some changes.
