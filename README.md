@@ -341,7 +341,9 @@ Lastly, regarding the email app:
 ![emailresult](/screenshots/emailresult.png)
 ![emailresult2](/screenshots/emailresult2.png)
 
+# Conclusion
 
+In this lab, we successfully set up an end-to-end Security Operations Centre (SOC) environment using Wazuh, TheHive, and Shuffle. By integrating Sysmon logs from a Windows endpoint, creating custom detection rules in Wazuh, and automating response workflows with Shuffle, we demonstrated how security alerts can be efficiently managed and escalated. Additionally, the workflow connecting Wazuh to VirusTotal and TheHive ensured real-time threat validation and streamlined analyst notifications. This lab provided hands-on experience in SOC automation, event monitoring, and incident response, highlighting the importance of integrating detection, analysis, and response in modern cybersecurity operations.
 
 
 
