@@ -308,5 +308,7 @@ TheHive will be configured following the same approach. The screenshots provided
 ![thehive1.png.png](/screenshots/thehive1.png)
 ![thehive2.png.png](/screenshots/thehive2.png)
 
+# Email
+
 
 
