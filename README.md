@@ -100,7 +100,7 @@ nano /etc/elasticsearch/elasticsearch.yml
 ```
 Change these parameters:
 
-![ecluster](/screenshots/eclustename.png)
+![ecluster](/screenshots/eclustername.png)
 ![enode](/screenshots/enode.png)
 ![eip](/screenshots/eip.png)
 ![emaster](/screenshots/emaster.png)
