@@ -258,10 +258,22 @@ Now let's use Shuffle  to automate some tasks that will make our lives easier.
 
 Let's start! 
 
+# Integrate Wazuh with Shuffle (The Webhook)
 
-
-
-
+Let's start by creating a webhook in our Shuffle workspace. Next, we will copy the webhook URL and integrate it into the Wazuh config file, which is located in the ```/var/ossec/etc/ossec.conf```.
+```
+nano /var/ossec/etc/ossec.conf
+```
+Paste: 
+```
+  <integration>
+   <name>shuffle</name>
+   <hook_url>https://shuffler.io/api/v1/hooks/webhook_bfb92a2e-af71-4562-95>
+   <rule_id>100002</rule_id>
+   <alert_format>json</alert_format>
+  </integration>
+```
+> Don't forget to restart the Wazuh service after making changes to the configuration file.
 
 
 
