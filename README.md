@@ -213,6 +213,9 @@ Now that Wazuh can read all the events, let's make some noise by running [Mimika
 
 Let's open a PowerShell window, navigate to the directory where Mimikatz is installed, and then run the ```mimikatz.exe``.
 
+![mimikatz](/screenshots/mimikatz.png)
+
+This should generate some logs in the Wazuh dashboard. Let's go back and check.
 
 
 
