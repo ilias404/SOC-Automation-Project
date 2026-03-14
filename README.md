@@ -250,6 +250,7 @@ Now let's use Shuffle  to automate some tasks that will make our lives easier.
 
 ![shufflediagram](/screenshots/shufflediagram.png)
 
+### Explanation
 1. A webhook integrated with Wazuh is triggered when a rule detects the execution of the mimikatz process.
 2. A regular expression (regex) extracts the SHA256 hash from the log sent by Wazuh.
 3. The extracted SHA256 hash is checked against VirusTotal to determine whether the file is known to be malicious.
