@@ -316,5 +316,12 @@ Lastly, regarding the email app:
 
 # Testing The Workflow
 
+![webhookresult](/screenshots/webhookresult.png)
+![sha256extractorresult](/screenshots/sha256extractorresult.png)
+![virustotalresult](/screenshots/virustotalresult.png)
+![thehiveresult](/screenshots/thehiveresult.png)
+![emailresult](/screenshots/emailresult.png)
+
+
 
 
