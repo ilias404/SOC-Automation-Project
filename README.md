@@ -320,19 +320,19 @@ Lastly, regarding the email app:
 
 ![webhookresult](/screenshots/webhookresult.png)
 
-3. The SHA256 regex is used to parse the log and extract the SHA256 hash.
+2. The SHA256 regex is used to parse the log and extract the SHA256 hash.
 
 ![sha256extractorresult](/screenshots/sha256extractorresult.png)
 
-4. VirusTotal receives the hash and scans its reputation level.
+3. VirusTotal receives the hash and scans its reputation level.
 
 ![virustotalresult](/screenshots/virustotalresult.png)
 
-5. An alert is created in our instance of TheHive.
+4. An alert is created in our instance of TheHive.
 
 ![thehiveresult](/screenshots/thehiveresult.png)
 
-6. An email is sent to prompt the SOC analyst to take action.
+5. An email is sent to prompt the SOC analyst to take action.
    
 ![emailresult](/screenshots/emailresult.png)
 ![emailresult2](/screenshots/emailresult2.png)
