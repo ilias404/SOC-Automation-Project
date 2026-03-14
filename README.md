@@ -44,6 +44,8 @@ Once installed, our Sysmon service should be ready to use. We can now ingest the
 
 # Wazuh Server Setup
 
+> Wazuh is a free, open-source security platform that unifies SIEM (Security Information and Event Management) and XDR (Extended Detection and Response) capabilities. It monitors endpoints, cloud workloads, and containers to detect threats, monitor file integrity, and ensure regulatory compliance. It uses a lightweight agent, a central server, and a dashboard for visualization.
+
 You can use this [official documentation](https://documentation.wazuh.com/current/quickstart.html) to install and configure Wazuh, but for simplicity in this lab, we're going to use a [pre-built virtual machine image](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) in Open Virtual Appliance (OVA) format which includes an Amazon Linux 2023 operating system and the Wazuh central components.
 
 Let's navigate to VirtualBox > File > Import Appliance. Then we can select our pre-built, downloaded image, hit Next, and finish setting up our Wazuh server.
@@ -54,6 +56,6 @@ Next, we will set up and install TheHive.
 
 # TheHive Setup
 
-To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://releases.ubuntu.com/jammy/) virtual machine.
+> TheHive is a scalable, open-source, and commercial Security Incident Response Platform (SIRP) designed for SOCs, CERTs, and cybersecurity analysts to investigate, triage, and act upon security incidents collaboratively. It streamlines threat analysis by integrating with MISP (Malware Information Sharing Platform) and automating workflows, significantly reducing incident response time.
 
-For our setup, we can follow [this documentation](https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/).
+To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://releases.ubuntu.com/jammy/) virtual machine and follow [this documentation](https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/).
