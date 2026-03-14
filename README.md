@@ -67,8 +67,9 @@ Now, let's take a look at the hive's configuration.
 On our VM (or SSH), let's run:
 ```nano /etc/cassandra/cassandra.yaml```
 Next, we need to change some of the default settings, such as the name of our cluster and the IP addressing.
-```
-cluster_name: 'wrldln'
-listen_address: 192.168.1.25
-rpc_address: 192.168.1.25
-```
+
+![cluster](/screenshots/cluster.png)
+![listenaddress](/screenshots/listenaddress.png)
+![rpcaddress](/screenshots/rpcaddress.png)
+![seeds](/screenshots/seeds.png)
+
