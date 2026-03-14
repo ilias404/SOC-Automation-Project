@@ -58,4 +58,17 @@ Next, we will set up and install TheHive.
 
 > TheHive is a scalable, open-source, and commercial Security Incident Response Platform (SIRP) designed for SOCs, CERTs, and cybersecurity analysts to investigate, triage, and act upon security incidents collaboratively. It streamlines threat analysis by integrating with MISP (Malware Information Sharing Platform) and automating workflows, significantly reducing incident response time.
 
-To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://releases.ubuntu.com/jammy/) virtual machine and follow [this documentation](https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/).
+To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://releases.ubuntu.com/jammy/) virtual machine and follow [this documentation](https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/) provided by StrangeBee.
+
+# TheHive Configuration
+
+Now, let's take a look at the hive's configuration.
+
+On our VM (or SSH), let's run:
+```nano /etc/cassandra/cassandra.yaml```
+Next, we need to change some of the default settings, such as the name of our cluster and the IP addressing.
+```
+cluster_name: 'wrldln'
+listen_address: 192.168.1.25
+rpc_address: 192.168.1.25
+```
