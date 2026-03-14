@@ -217,6 +217,11 @@ Let's open a PowerShell window, navigate to the directory where Mimikatz is inst
 
 This should generate some logs in the Wazuh dashboard. Let's go back and check.
 
+![mimikatzlog](/screenshots/mimikatzlog.png)
+
+
+
+
 
 
 
