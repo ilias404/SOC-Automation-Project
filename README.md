@@ -184,3 +184,16 @@ If we were to create telemetry using the current configurations, Wazuh might not
 
 ![ossec](/screenshots/ossecconf.png)
 
+This forces Wazuh to archive all logs and store them in a single file called 'archives', located in the ```/var/ossec/logs/archives``` directory.
+in order for was to start ingesting these logs we need to change our configurationin file beat to do that lets run:
+
+
+
+
+
+Restart the service: 
+```
+systemctl restart wazuh-manager.service
+```
+
+
