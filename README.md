@@ -303,5 +303,10 @@ Now let's configure it to "Get a Hash Report" and retrieve the SHA-256 hash from
 ![virustotalconfg2.png](/screenshots/virustotalconfg2.png)
 
 # TheHive
-TheHive will be configured following the same approach. The screenshots provided demonstrate the configuration process step by step.
+TheHive will be configured following the same approach. The screenshots provided demonstrate the configuration process.
+
+![thehive1.png.png](/screenshots/thehive1.png)
+![thehive2.png.png](/screenshots/thehive2.png)
+
+
 
