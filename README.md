@@ -149,3 +149,9 @@ To get logs from our Windows 10 machine, we must first set up a Wazuh agent on i
 ![wazuhagent](/screenshots/wazuhagent2.png)
 ![wazuhagent](/screenshots/wazuhagent3.png)
 
+Let's copy the PowerShell command we received from Wazuh to our Windows 10 machine and start the Agent Service.
+
+```
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.3-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.1.32' WAZUH_AGENT_NAME='demo'
+NET START Wazuh
+```
