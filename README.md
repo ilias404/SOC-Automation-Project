@@ -159,3 +159,15 @@ Then start the Agent Service:
 ```
 NET START Wazuh
 ```
+
+To feed Sysmon logs to the Wazuh server on our Windows machine, we need to make some changes to the Wazuh agent configuration file ```ossec.conf```, which is located in ```C:\Program Files (x86)\ossec-agent```
+
+Scroll down through the file and under ```<!-- Log analysis -->```, lets add this :
+
+```
+<localfile>
+    <location>Microsoft-Windows-Sysmon/Operational</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+```
+Our Sysmon logs can now appear in our Wazuh dashboard.
