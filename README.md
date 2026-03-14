@@ -299,16 +299,19 @@ Setting up the VirusTotal app is relatively easy. All we have to do is create a 
 
 Now let's configure it to "Get a Hash Report" and retrieve the SHA-256 hash from the SHA-256 extractor that we created earlier.
 
-![virustotalconfg1.png](/screenshots/virustotalconfg1.png)
-![virustotalconfg2.png](/screenshots/virustotalconfg2.png)
+![virustotalconfg1](/screenshots/virustotalconfg1.png)
+![virustotalconfg2](/screenshots/virustotalconfg2.png)
 
 # TheHive
 TheHive will be configured following the same approach. The screenshots provided demonstrate the configuration process.
 
-![thehive1.png.png](/screenshots/thehive1.png)
-![thehive2.png.png](/screenshots/thehive2.png)
+![thehive1](/screenshots/thehive1.png)
+![thehive2](/screenshots/thehive2.png)
 
 # Email
+
+shuffleemail.png
+![shuffleemail](/screenshots/shuffleemail.png)
 
 
 
