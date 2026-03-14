@@ -184,9 +184,12 @@ If we were to create telemetry using the current configurations, Wazuh might not
 
 ![ossec](/screenshots/ossecconf.png)
 
-This forces Wazuh to archive all logs and store them in a single file called 'archives', located in the ```/var/ossec/logs/archives``` directory.
-in order for was to start ingesting these logs we need to change our configurationin file beat to do that lets run:
+This forces Wazuh to archive all logs and store them in a single file called ```archives```, located in the ```/var/ossec/logs/archives``` directory.
 
+In order for us to start ingesting these logs, we need to change the configuration file in ```/filebeat```. To do that, let's run:
+```
+nano /etc/filebeat/filebeat.yml
+```
 
 
 
