@@ -238,7 +238,8 @@ You can now obtain a Wazuh Rule for Sysmon Event ID 1 by using ChatGPT or copyin
     </mitre>
   </rule>
 ```
-Let's tailor it to our preferences — we should end up with something like this: 
+Let's tailor it to our preferences — we should end up with something like this:
+
 ![localrule](/screenshots/localrule.png)
 
 
