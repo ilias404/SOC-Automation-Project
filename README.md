@@ -54,22 +54,21 @@ Let's navigate to VirtualBox > File > Import Appliance. Then we can select our p
 
 Next, we will set up and install TheHive.
 
-# TheHive Setup
+# TheHive's Setup
 
 > TheHive is a scalable, open-source, and commercial Security Incident Response Platform (SIRP) designed for SOCs, CERTs, and cybersecurity analysts to investigate, triage, and act upon security incidents collaboratively. It streamlines threat analysis by integrating with MISP (Malware Information Sharing Platform) and automating workflows, significantly reducing incident response time.
 
 To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://releases.ubuntu.com/jammy/) virtual machine and follow [this documentation](https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/) provided by StrangeBee.
 
-# TheHive Configuration
+# TheHive's Configuration
 
-Now, let's take a look at the hive's configuration.
+As the Hive's configuration is mentioned in the documentation, we won't go into much detail about it here. 
+However, once we have configured Cassandra, Java and Elasticsearch, we can check if our services are active by running the following commands:
+```
+systemctl status thehive
+systemctl status cassandra.service
+systemctl status elasticsearch.service
+```
 
-On our VM (or SSH), let's run:
-```nano /etc/cassandra/cassandra.yaml```
-Next, we need to change some of the default settings, such as the name of our cluster and the IP addressing.
-
-![cluster](/screenshots/cluster.png)
-![listenaddress](/screenshots/listenaddress.png)
-![rpcaddress](/screenshots/rpcaddress.png)
-![seeds](/screenshots/seeds.png)
+If all services are up, we can access our server by entering its IP address and port 9000 into our browser's URL.
 
