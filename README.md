@@ -280,9 +280,14 @@ Paste:
 
 # The SHA256 Extractor
 
-The hashes field includes several hash types (MD5, SHA1, SHA256, etc.). For VirusTotal analysis, we focus exclusively on SHA256, because it is the standard hash format most threat intelligence services, including VirusTotal, use for identifying files.
+![hashtypes](/screenshots/hashtypes.png)
+
+
+The hashes field includes several hash types (MD5, SHA1, SHA256, etc.). For VirusTotal analysis, we focus exclusively on SHA256, because it is the standard hash format most threat intelligence services, including VirusTotal.
 
 To send the alert to VirusTotal, the relevant information must be extracted (parsed) from the log when an alert is generated. This is done using a regex to extract the SHA256 hash, which can then be sent to VirusTotal for analysis. Using ChatGPT, we can obtain the necessary regular expression to locate the SHA256 hash.
+
+
 
 
 
