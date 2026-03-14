@@ -63,6 +63,26 @@ To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://rele
 # TheHive's Configuration
 
 As the Hive's configuration is mentioned in the documentation, we won't go into much detail about it here. 
+However, we are going to change some variables that were not mentioned in the documentation at the time of writing.
+
+Let's run:
+
+> Note ⚠️: Only run the following commands after installing Cassandra, Java and Elasticsearch; otherwise, you won't be able to find the configuration files.
+
+```
+nano /etc/cassandra/cassandra.yaml
+```
+Then change the parameters below:
+
+![cluster](/screenshots/cluster.png)
+![listenaddress](/screenshots/listenaddress.png)
+![rpcaddress](/screenshots/rpcaddress.png)
+![seeds](/screenshots/seeds.png)
+
+> Click ```Ctrl+W``` if you want to search for a specific parameter or word.
+
+> To find out your IP address, run the ```ip a``` command.
+
 However, once we have configured Cassandra, Java and Elasticsearch, we can check if our services are active by running the following commands:
 ```
 systemctl status thehive
