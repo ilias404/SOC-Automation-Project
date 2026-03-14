@@ -276,7 +276,7 @@ Paste:
 
 ![shuffleinteg](/screenshots/shuffleinteg.png)
 
-> Don't forget to restart the Wazuh service after making changes to the configuration file.
+> Don't forget to restart the Wazuh service after making changes to the configuration file. ```systemctl restart wazuh-manager.service```
 
 
 
