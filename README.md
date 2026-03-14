@@ -260,7 +260,7 @@ Let's start!
 
 # Integrate Wazuh with Shuffle (The Webhook)
 
-Let's start by creating a webhook in our Shuffle workspace. Next, we will copy the webhook URL and integrate it into the Wazuh config file, which is located in the ```/var/ossec/etc/ossec.conf```.
+Let's start by creating a webhook in our Shuffle workspace. Next, we will copy the webhook URL and integrate it into the Wazuh config file, which is located in ```/var/ossec/etc/ossec.conf```.
 ```
 nano /var/ossec/etc/ossec.conf
 ```
