@@ -9,7 +9,7 @@ First, we will create a diagram to help visualise the data flow between our mach
 Explanation:
 
 1. The Windows 10 virtual machine (VM) sends Sysmon logs to the Wazuh server.
-2. The Wazuh server sends this information to Shuffle if a certain rule is met, which runs a VirusTotal scan on the malware before creating a case in TheHive.
+2. The Wazuh server sends this information to Shuffle if a certain rule is met, then runs a VirusTotal scan on the malware before creating a case in TheHive.
 3. An email alert is sent to the analyst to notify them of the event, allowing them to investigate and take action.
 
 # Setup
