@@ -242,6 +242,8 @@ Let's tailor it to our preferences — we should end up with something like this
 
 ![localrule](/screenshots/localrule.png)
 
+# Shuffle automation
+
 
 
 
