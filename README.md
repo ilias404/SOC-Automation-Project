@@ -243,6 +243,20 @@ Let's tailor it to our preferences — we should end up with something like this
 ![localrule](/screenshots/localrule.png)
 
 # Shuffle automation
+Now let's use Shuffle  to automate some tasks that will make our lives easier.
+> Shuffle (often called Shuffle automation) is an open-source SOAR tool used in cybersecurity to automate security workflows. It connects different security tools and automates actions when an alert occurs.
+
+## The Shuffle Workflow
+
+![shufflediagram](/screenshots/shufflediagram.png)
+
+1. A webhook integrated with Wazuh is triggered when a rule detects the execution of the mimikatz process.
+2. A regular expression (regex) extracts the SHA256 hash from the log sent by Wazuh.
+3. The extracted SHA256 hash is checked against VirusTotal to determine whether the file is known to be malicious.
+4. An alert is then created in TheHive, and an email notification is sent to the SOC analyst.
+
+Let's start! 
+
 
 
 
