@@ -297,4 +297,5 @@ Setting up the VirusTotal app is relatively easy. All we have to do is create a 
 
 ![apikey](/screenshots/apikey.png)
 
+Now let's configure it to retrieve the SHA-256 hash from the SHA-256 extractor that we created earlier.
 
