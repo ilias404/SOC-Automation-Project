@@ -172,4 +172,9 @@ Scroll down through the file and under ```<!-- Log analysis -->```, lets add thi
 ```
 ![ossec](/screenshots/ossec.png)
 
+Restart the Wazuh service:
+```
+net stop wazuh
+net start wazuh
+```
 Our Sysmon logs can now appear in our Wazuh dashboard.
