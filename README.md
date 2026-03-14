@@ -324,14 +324,15 @@ Lastly, regarding the email app:
 
 ![sha256extractorresult](/screenshots/sha256extractorresult.png)
 
-5. VirusTotal receives the hash and scans its reputation level.
+4. VirusTotal receives the hash and scans its reputation level.
 
 ![virustotalresult](/screenshots/virustotalresult.png)
-7. An alert is created in our instance of TheHive.
+
+5. An alert is created in our instance of TheHive.
 
 ![thehiveresult](/screenshots/thehiveresult.png)
 
-8. An email is sent to prompt the SOC analyst to take action.
+6. An email is sent to prompt the SOC analyst to take action.
    
 ![emailresult](/screenshots/emailresult.png)
 ![emailresult2](/screenshots/emailresult2.png)
