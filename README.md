@@ -212,6 +212,7 @@ Now let’s go to the Wazuh dashboard and create an index pattern for wazuh-arch
 
 Now that Wazuh can read all the events, let's make some noise by running [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919) on our Windows 10 virtual machine.
 > Mimikatz is a widely used, open-source security tool created by Benjamin Delpy that extracts plain-text passwords, hashes, PINs, and Kerberos tickets from Microsoft Windows memory. It is primarily used to analyze Windows security, but also to perform attacks like pass-the-hash or privilege escalation.
+
 > Note: Mimikatz is run only in a lab environment for testing. Running it on production systems is unsafe and not recommended.
 
 Let's open a PowerShell window, navigate to the directory where Mimikatz is installed, and then run the ```mimikatz.exe```.
