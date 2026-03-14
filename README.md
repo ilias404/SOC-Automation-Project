@@ -55,4 +55,5 @@ Next, we will set up and install TheHive.
 # TheHive Setup
 
 To setup TheHive, we're going to use a [Ubuntu 22.04.5 live server](https://releases.ubuntu.com/jammy/) virtual machine.
+
 For our setup, we can follow [this documentation](https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/).
