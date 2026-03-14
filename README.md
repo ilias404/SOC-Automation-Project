@@ -289,7 +289,11 @@ To send the alert to VirusTotal, the relevant information must be extracted (par
 
 ![regex](/screenshots/regex.png)
 
+# VirusTotal
 
+Let's set up the VirusTotal app on Shuffle.
+
+Setting up the VirusTotal app is relatively easy. All we have to do is create a [VirusTotal](https://www.virustotal.com/) account, get the API key from our profile settings, and paste it into the API key field in Shuffle.
 
 
 
