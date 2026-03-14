@@ -4,7 +4,9 @@
 The aim of this lab is to familiarise ourselves with Wazuh, The Hive and Shuffler in order to automate Security Operations Centre (SOC) tasks.
 First, we will create a diagram to help visualise the data flow between our machines and components in the lab environment.
 
-![Diagram](diagram.png)
+![diagram](/screenshots/diagram.png)
+![diagram2](/screenshots/diagram2.png)
+
 
 Explanation:
 
