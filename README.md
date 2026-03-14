@@ -170,4 +170,6 @@ Scroll down through the file and under ```<!-- Log analysis -->```, lets add thi
     <log_format>eventchannel</log_format>
   </localfile>
 ```
+![ossec](/screenshots/ossec.png)
+
 Our Sysmon logs can now appear in our Wazuh dashboard.
