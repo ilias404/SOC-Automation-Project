@@ -216,6 +216,7 @@ Let's open a PowerShell window, navigate to the directory where Mimikatz is inst
 ![mimikatz](/screenshots/mimikatz.png)
 
 This should generate some logs in the Wazuh dashboard. Let's go back and check.
+> Note: Use the ```wazuh-archives-**``` index pattern we created earlier.
 
 ![mimikatzlog](/screenshots/mimikatzlog.png)
 
