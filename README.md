@@ -195,6 +195,7 @@ In order for us to start ingesting these logs, we need to change the configurati
 ```
 nano /etc/filebeat/filebeat.yml
 ```
+![filebeat](/screenshots/filebeat.png)
 
 
 
