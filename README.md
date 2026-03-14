@@ -130,16 +130,14 @@ systemctl enable thehive
 
 
 
-
-
-
-
-However, once we have configured Cassandra, Java and Elasticsearch, we can check if our services are active by running the following commands:
+Once we have configured Cassandra, Elasticsearch and TheHive, let's check if our services are active by running the following commands:
 ```
 systemctl status thehive
 systemctl status cassandra.service
 systemctl status elasticsearch.service
 ```
 
-If all services are up, we can access our server by entering its IP address and port 9000 into our browser's URL.
+If all services are up and active, we can access our server by entering its IP address and port 9000 into our browser's URL.
+
+![thehivelogin](/screenshots/thehivelogin.png)
 
