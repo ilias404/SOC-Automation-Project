@@ -100,6 +100,16 @@ nano /etc/elasticsearch/elasticsearch.yml
 ```
 Change these parameters:
 
+![ecluster](/screenshots/eclustename.png)
+![enode](/screenshots/enode.png)
+![eip](/screenshots/eip.png)
+![emaster](/screenshots/emaster.png)
+
+Run:
+```
+systemctl start elasticsearch
+systemctl enable elasticsearch
+```
 
 
 
