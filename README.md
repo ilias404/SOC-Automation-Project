@@ -48,5 +48,5 @@ You can use this [official documentation](https://documentation.wazuh.com/curren
 
 Let's navigate to VirtualBox > File > Import Appliance. Then we can select our pre-built, downloaded image, hit Next, and finish setting up our Wazuh server.
 
-
+![wazuhova](/screenshots/wazuhova.png)
 
