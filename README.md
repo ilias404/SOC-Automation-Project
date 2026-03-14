@@ -220,6 +220,25 @@ This should generate some logs in the Wazuh dashboard. Let's go back and check.
 
 ![mimikatzlog](/screenshots/mimikatzlog.png)
 
+Bingo!
+
+# Creating Custom Rules
+In Wazuh, a rule is a condition used to detect suspicious or important events in logs and generate an alert.
+To create an alert that prompts a SOC analyst to take action, we will create a custom rule that detects the start of our Mimikatz process.
+Let's head to Server Management > Rules > Manage Rules > Custom Rules > ```local_rules.xml```
+Now, by using ChatGPT or copying a rule from ```0800-sysmon_id_1.xml, you can obtain a Wazuh Rule for Sysmon Event ID 1 to customize your own rule. In this lab, we'll be using the following from 0800-sysmon_id_1.xml:
+```
+<rule id="92000" level="4">
+    <if_group>sysmon_event1</if_group>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)\\(c|w)script\.exe</field>
+    <options>no_full_log</options>
+    <description>Scripting interpreter spawned a new process</description>
+    <mitre>
+      <id>T1059.005</id>
+    </mitre>
+  </rule>
+```
+Now lets tailor it to our preferences and we should get something like this: 
 
 
 
