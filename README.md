@@ -273,9 +273,10 @@ Paste:
    <alert_format>json</alert_format>
   </integration>
 ```
-> Don't forget to restart the Wazuh service after making changes to the configuration file.
 
 ![shuffleinteg](/screenshots/shuffleinteg.png)
+
+> Don't forget to restart the Wazuh service after making changes to the configuration file.
 
 
 
