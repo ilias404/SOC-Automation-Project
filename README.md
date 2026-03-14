@@ -182,7 +182,7 @@ Our Sysmon logs can now appear in our Wazuh's dashboard.
 # Telemetry
 If we were to create telemetry using the current configurations, Wazuh might not display the telemetry because it does not log all events by default. Fortunately, we can change this by accessing the file ```/var/ossec/etc/ossec.conf``` on our Wazuh hosting machine and making some changes.
 
-![ossec](/screenshots/ossecconf.png)
+![ossecconf](/screenshots/ossecconf.png)
 
 Then restart the service: 
 ```
@@ -202,6 +202,9 @@ Then restart the service:
 systemctl restart filebeat
 ```
 Now let’s go back to the Wazuh dashboard and create a new index pattern to read the wazuh-archives-* logs.
+
+![index1](/screenshots/index1.png)
+![index2](/screenshots/index2.png)
 
 
 
