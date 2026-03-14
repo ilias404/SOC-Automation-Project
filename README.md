@@ -117,6 +117,16 @@ Run:
 chown -R thehive:thehive /opt/thp
 nano /etc/thehive/application.conf
 ```
+Change:
+
+![thehiveip](/screenshots/thehiveip.png)
+![thehivebaseurl](/screenshots/thehivebaseurl.png)
+
+Run:
+```
+systemctl start thehive
+systemctl enable thehive
+```
 
 
 
