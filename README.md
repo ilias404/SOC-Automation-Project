@@ -326,6 +326,8 @@ Lastly, regarding the email app:
 ![thehiveresult](/screenshots/thehiveresult.png)
 5. An email is sent to prompt the SOC analyst to take action.
 ![emailresult](/screenshots/emailresult.png)
+![emailresult2](/screenshots/emailresult2.png)
+
 
 
 
