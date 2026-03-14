@@ -212,6 +212,7 @@ Now let’s go to the Wazuh dashboard and create an index pattern for wazuh-arch
 
 Now that Wazuh can read all the events, let's make some noise by running [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919) on our Windows 10 virtual machine.
 > Mimikatz is a widely used, open-source security tool created by Benjamin Delpy that extracts plain-text passwords, hashes, PINs, and Kerberos tickets from Microsoft Windows memory. It is primarily used to analyze Windows security, but also to perform attacks like pass-the-hash or privilege escalation.
+> Note: Mimikatz is run only in a lab environment for testing. Running it on production systems is unsafe and not recommended.
 
 Let's open a PowerShell window, navigate to the directory where Mimikatz is installed, and then run the ```mimikatz.exe```.
 
@@ -253,7 +254,7 @@ Now let's use Shuffle  to automate some tasks that will make our lives easier.
 ![shufflediagram](/screenshots/shufflediagram.png)
 
 ### Explanation
-1. A webhook integrated with Wazuh is triggered when a rule detects the execution of the mimikatz process.
+1. When Wazuh detects the execution of Mimikatz via a custom rule, it triggers a webhook that sends the alert to Shuffle.
 2. A regular expression (regex) extracts the SHA256 hash from the log sent by Wazuh.
 3. The extracted SHA256 hash is checked against VirusTotal to determine whether the file is known to be malicious.
 4. An alert is then created in TheHive, and an email notification is sent to the SOC analyst.
