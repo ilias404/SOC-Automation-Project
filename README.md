@@ -316,15 +316,23 @@ Lastly, regarding the email app:
 
 # Testing The Workflow
 
-1. Webhook triggers: Upon detecting the mimikkatz process, Wazuh sends an alert to Shuffle via a URL.
+1. Webhook triggers: Upon detecting the mimikatz process, Wazuh sends an alert to Shuffle via a URL.
+
 ![webhookresult](/screenshots/webhookresult.png)
-2. The SHA256 regex is used to parse the log and extract the SHA256 hash.
+
+3. The SHA256 regex is used to parse the log and extract the SHA256 hash.
+
 ![sha256extractorresult](/screenshots/sha256extractorresult.png)
-3. VirusTotal receives the hash and scans its reputation level.
+
+5. VirusTotal receives the hash and scans its reputation level.
+
 ![virustotalresult](/screenshots/virustotalresult.png)
-4. An alert is created in our instance of TheHive.
+7. An alert is created in our instance of TheHive.
+
 ![thehiveresult](/screenshots/thehiveresult.png)
-5. An email is sent to prompt the SOC analyst to take action.
+
+8. An email is sent to prompt the SOC analyst to take action.
+   
 ![emailresult](/screenshots/emailresult.png)
 ![emailresult2](/screenshots/emailresult2.png)
 
