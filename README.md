@@ -111,6 +111,12 @@ systemctl start elasticsearch
 systemctl enable elasticsearch
 ```
 
+## TheHive
+Run: 
+```
+chown -R thehive:thehive /opt/thp
+nano /etc/thehive/application.conf
+```
 
 
 
