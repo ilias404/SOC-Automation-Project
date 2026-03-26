@@ -1,4 +1,4 @@
-# Wazuh-Lab
+# SOC Automation Project (Wazuh)
 
 # Introduction
 The aim of this lab is to familiarize ourselves with Wazuh, TheHive and Shuffle in order to automate Security Operations Centre (SOC) tasks.
