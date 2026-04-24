@@ -229,7 +229,7 @@ Bingo.
 # Creating Custom Rules
 In Wazuh, a rule is a condition that is used to detect important or suspicious events in log files and generate an alert.
 To create an alert that prompts a SOC analyst to take action, we will create a custom rule that detects the start of our Mimikatz process.
-Head to Server Management > Rules > Manage Rules > Custom Rules > ```local_rules.xml```.
+Head to `Server Management > Rules > Manage Rules > Custom Rules > local_rules.xml`.
 You can now obtain a Wazuh Rule for Sysmon Event ID 1 by using ChatGPT or copying a rule from ```0800-sysmon_id_1.xml``` to customise your own rule. In this lab, we will use the following rule from ```0800-sysmon_id_1.xml```:
 ```
 <rule id="92000" level="4">
